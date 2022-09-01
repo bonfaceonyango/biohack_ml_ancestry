@@ -6,4 +6,5 @@
 - model training
 - model evalution
 - model testing 
+- model saving
 - model deployment
