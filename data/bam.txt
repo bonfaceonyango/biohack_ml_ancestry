@@ -1,0 +1,11 @@
+HG02061.mapped.ILLUMINA.bwa.KHV.exome.20120522.bam
+HG03838.mapped.ILLUMINA.bwa.STU.exome.20130415.bam
+HG04006.mapped.ILLUMINA.bwa.STU.exome.20130422.bam
+HG04227.mapped.ILLUMINA.bwa.STU.exome.20130415.bam
+NA19455.mapped.ILLUMINA.bwa.LWK.exome.20130422.bam
+NA19467.mapped.ILLUMINA.bwa.LWK.exome.20130415.bam
+NA19669.mapped.ILLUMINA.bwa.MXL.exome.20120522.bam
+NA19670.mapped.ILLUMINA.bwa.MXL.exome.20120522.bam
+NA19675.mapped.ILLUMINA.bwa.MXL.exome.20120522.bam
+NA19704.mapped.ILLUMINA.bwa.ASW.exome.20120522.bam
+NA19719.mapped.ILLUMINA.bwa.MXL.exome.20120522.bam
