@@ -1,0 +1,20 @@
+1. Downloading reference sequence
+2. Downloading sample BAM files
+3. Referencing reference sequence BWA
+4. Generate vcf  # freebayes
+5. Index the vcf #tabix
+6. Generate consensus 
+7. Generate k-mers  jellyfish
+8. Filter most frequent kmers
+9. Create a dataframe
+10. model Training
+11. Model Testing
+12. Model Evaluation
+13. Save the model
+14. Model Deployment
+
+
+
+
+
+
