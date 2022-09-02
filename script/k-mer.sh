@@ -4,7 +4,7 @@ do
 
    mkdir -p ${kmer_prof_dir}
 
-   #example shown for files of AFR population
+   
    for sample in `ls *.fa`
    do
 
