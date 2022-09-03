@@ -1,4 +1,4 @@
-import getopt, sys, subprocess,os
+import subprocess
 
 #make file executable
 subprocess.Popen("chmod +x ../script/bam2fa.sh", shell=True)
