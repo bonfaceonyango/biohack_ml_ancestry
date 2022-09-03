@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
-
+#import sys
 # run in directory containing the data
 SECONDS=0   
 # index the referece genome
-
+echo "Indexing refence file"
 bwa index hs37d5.fa
 mkdir -p consensus
 #generate vcf 
@@ -22,7 +22,7 @@ echo "Creating $out_gz"
 bgzip ${outfile} 
 
 # indexing the vcf
-echo "indexing $outfile"
+echo "indexing  $outfile"
 tabix -fp vcf ${out_gz} 
 
 echo "$out_gz"
