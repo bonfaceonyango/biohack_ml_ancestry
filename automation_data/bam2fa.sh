@@ -3,11 +3,11 @@
 # run in directory containing the data
 SECONDS=0   
 # index the referece genome
-echo "Indexing refence file"
-bwa index hs37d5.fa
+#echo "Indexing refence file"
+# bwa index hs37d5.fa
+#samtools faidx hs37d5.fa
 mkdir -p consensus
 #generate vcf 
-
 for i in `ls *.bam`
 do
 outfile=`basename $i .bam`.vcf
