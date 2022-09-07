@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd "consensus/"
+cd "consensus_auto/"
 for k in 27
 do
    kmer_prof_dir="${k}_mers/"
