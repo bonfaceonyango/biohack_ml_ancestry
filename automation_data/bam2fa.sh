@@ -2,12 +2,9 @@
 #import sys
 # run in directory containing the data
 SECONDS=0   
-# index the referece genome
-echo "Indexing refence file"
-bwa index hs37d5.fa
-mkdir -p consensus
-#generate vcf 
 
+mkdir -p consensus_auto
+#generate vcf 
 for i in `ls *.bam`
 do
 outfile=`basename $i .bam`.vcf
@@ -27,9 +24,9 @@ tabix -fp vcf ${out_gz}
 
 echo "$out_gz"
 out_fa=`basename $i .bam`.fa
-echo "generating consensus ${out_fa}"
+echo "generating consensus_auto ${out_fa}"
 
-cat hs37d5.fa | bcftools consensus ${out_gz}> consensus/${out_fa}
+cat hs37d5.fa | bcftools consensus ${out_gz}> consensus_auto/${out_fa}
 
 echo "Completed runing $i in $SECONDS seconds"
 done
