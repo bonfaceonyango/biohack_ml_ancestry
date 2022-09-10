@@ -6,7 +6,7 @@ do
 
    mkdir -p ${kmer_prof_dir}
 
-   #example shown for files of AFR population
+#    Generate k-mers
    for sample in `ls *.fa`
    do
        echo "starting generating kmers for $sample"

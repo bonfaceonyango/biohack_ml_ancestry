@@ -1,5 +1,4 @@
 import pandas as pd
-import pickle
 code_name =[]
 def dataframe(filename):
     """

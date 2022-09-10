@@ -2,10 +2,7 @@
 #import sys
 # run in directory containing the data
 SECONDS=0   
-# index the referece genome
-#echo "Indexing refence file"
-# bwa index hs37d5.fa
-#samtools faidx hs37d5.fa
+
 mkdir -p consensus_auto
 #generate vcf 
 for i in `ls *.bam`
