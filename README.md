@@ -1,4 +1,4 @@
-# Pipeline for prediction of ancestry using whole exom data: African Talent 2022 Biohack 
+# Pipeline for ancestry prediction using whole exom data: African Talent 2022 Biohack 
 Ancestry prediction is important in forensic analysis, Genome wide association studies ,evolutionary Biology and it provide information about geographic origin. 
 #  Workflow
 - BAM files are the input for the pipeline
