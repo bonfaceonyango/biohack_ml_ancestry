@@ -10,10 +10,10 @@ Ancestry prediction is important in forensic analysis, Genome wide association s
 - model saving
 - model deployment
 # setting up conda environment
-Export tools from configuration file to set up the conda environment.
+Export tools from this  configuration file to set up the conda environment.
 ```
-conda export machine_learning.yml
-conda activate machine_learning
+conda env create -f conda_env.yml
+conda activate conda_env
 ```
 # Usage
 
