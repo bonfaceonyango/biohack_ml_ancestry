@@ -16,6 +16,10 @@ conda env create -f conda_env.yml
 conda activate conda_env
 ```
 # Usage
+- Run the code below
+```
+./automation.py
+````
 
 # Contributors
 - Henry Ndugwa
