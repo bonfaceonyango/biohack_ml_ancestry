@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 #import sys
 # run in directory containing the data
-SECONDS=0   
+# SECONDS=0   
 
 mkdir -p consensus_auto
 #generate vcf 
@@ -28,19 +28,19 @@ echo "generating consensus_auto ${out_fa}"
 
 cat hs37d5.fa | bcftools consensus ${out_gz}> consensus_auto/${out_fa}
 
-echo "Completed runing $i in $SECONDS seconds"
+
 done
 #timing the run time
-if (( $SECONDS > 3600 )) ; then
-    let "hours=SECONDS/3600"
-    let "minutes=(SECONDS%3600)/60"
-    let "seconds=(SECONDS%3600)%60"
-    echo "Completed in $hours hour(s), $minutes minute(s) and $seconds second(s)" 
-elif (( $SECONDS > 60 )) ; then
-    let "minutes=(SECONDS%3600)/60"
-    let "seconds=(SECONDS%3600)%60"
-    echo "Completed in $minutes minute(s) and $seconds second(s)"
-else
-    echo "Completed in $SECONDS seconds"
-fi
+# if (( $SECONDS > 3600 )) ; then
+#     let "hours=SECONDS/3600"
+#     let "minutes=(SECONDS%3600)/60"
+#     let "seconds=(SECONDS%3600)%60"
+#     echo "Completed in $hours hour(s), $minutes minute(s) and $seconds second(s)" 
+# elif (( $SECONDS > 60 )) ; then
+#     let "minutes=(SECONDS%3600)/60"
+#     let "seconds=(SECONDS%3600)%60"
+#     echo "Completed in $minutes minute(s) and $seconds second(s)"
+# else
+#     echo "Completed in $SECONDS seconds"
+# fi
 
