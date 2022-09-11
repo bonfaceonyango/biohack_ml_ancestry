@@ -16,7 +16,7 @@ conda env create -f conda_env.yml
 conda activate conda_env
 ```
 # Usage
-- Run the code below
+- Run the code below within the directory of the sample data
 ```
 ./automation.py
 ````
