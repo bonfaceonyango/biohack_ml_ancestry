@@ -3,13 +3,13 @@ import subprocess
 import pickle
 import pandas as pd
 from dataframe import dataframe as df
-import time
-start = time.time()
+# import time
+# start = time.time()
 # from dataframe import code_name
 
-# subprocess.Popen("chmod +x ./bam2fa.sh", shell=True)
+subprocess.Popen("chmod +x ./bam2fa.sh", shell=True)
 # Run the bash script
-# subprocess.run("./bam2fa.sh", shell=True)
+subprocess.run("./bam2fa.sh", shell=True)
 #Give executable permission to kmer script
 
 subprocess.run("chmod +x ./k-mer.sh", shell=True)
@@ -55,7 +55,7 @@ for i in file:
         # print(prediction)
         print(f"sample {sample} is a British origin with a prediction probabirity of",max(loaded_model.predict_proba(dff)[0].tolist()))
     
-end = time.time()
-print(end-start)
+# end = time.time()
+# print(end-start)
 #Docker refs
 #https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754
