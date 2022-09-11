@@ -3,22 +3,25 @@ import subprocess
 import pickle
 import pandas as pd
 from dataframe import dataframe as df
+import time
+start = time.time()
 # from dataframe import code_name
 
-subprocess.Popen("chmod +x ./bam2fa.sh", shell=True)
+# subprocess.Popen("chmod +x ./bam2fa.sh", shell=True)
 # Run the bash script
-subprocess.run("./bam2fa.sh", shell=True)
+# subprocess.run("./bam2fa.sh", shell=True)
 #Give executable permission to kmer script
 
-subprocess.Popen("chmod +x ./k-mer.sh", shell=True)
+subprocess.run("chmod +x ./k-mer.sh", shell=True)
 #Execute the k-mer script
-subprocess.Popen("./k-mer.sh", shell=True)
+subprocess.run("./k-mer.sh", shell=True)
 
-subprocess.Popen("chmod +x ./frequent_kmer.sh", shell=True)
-subprocess.Popen("./frequent_kmer.sh", shell=True)
+subprocess.run("chmod +x ./frequent_kmer.sh", shell=True)
+subprocess.run("./frequent_kmer.sh", shell=True)
 # create file list
-subprocess.Popen("chmod +x ./path.sh", shell=True)
-subprocess.Popen("./path.sh", shell=True)
+subprocess.run("chmod +x ./path.sh", shell=True)
+subprocess.run("./path.sh", shell=True)
+#column names in the dataframe
 col_df=pd.read_csv("./col_names",index_col="sample_id")
 
 
@@ -52,6 +55,7 @@ for i in file:
         # print(prediction)
         print(f"sample {sample} is a British origin with a prediction probabirity of",max(loaded_model.predict_proba(dff)[0].tolist()))
     
-
+end = time.time()
+print(end-start)
 #Docker refs
 #https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754
